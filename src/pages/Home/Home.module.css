@@ -1,0 +1,53 @@
+.banner {
+  position: relative;
+  background-image: url("../../../public/images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  color: #fff;
+}
+
+.bannerContent {
+  margin-top: 290px;
+  margin-left: 64px;
+  width: 571px;
+  height: 176px;
+  color: #fff;
+}
+
+.bannerTitle {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.66667;
+  color: #f7f7f7;
+  margin-bottom: 16px;
+}
+
+.bannerSubtitle {
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #f7f7f7;
+  margin-bottom: 40px;
+}
+
+.viewNowBtn {
+  padding: 16px 60px;
+  background-color: #e44848;
+  border: none;
+  border-radius: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.viewNowBtn:hover {
+  background-color: #d84343;
+}

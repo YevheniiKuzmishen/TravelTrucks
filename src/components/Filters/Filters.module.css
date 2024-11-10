@@ -1,0 +1,28 @@
+.filters {
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+.filterOptions {
+  display: flex;
+  gap: 8px;
+}
+.button,
+.activeButton {
+  padding: 8px 16px;
+}
+.activeButton {
+  background-color: red;
+  color: white;
+}
+.searchButton {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

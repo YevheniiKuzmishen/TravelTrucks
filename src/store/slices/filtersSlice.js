@@ -5,13 +5,7 @@ const filtersSlice = createSlice({
   initialState: {
     location: "",
     type: "",
-    features: {
-      AC: false,
-      kitchen: false,
-      bathroom: false,
-      automatic: false,
-      TV: false,
-    },
+    equipment: [],
   },
   reducers: {
     setLocation: (state, action) => {
@@ -20,12 +14,22 @@ const filtersSlice = createSlice({
     setType: (state, action) => {
       state.type = action.payload;
     },
-    toggleFeature: (state, action) => {
-      const feature = action.payload;
-      state.features[feature] = !state.features[feature];
+    toggleEquipment: (state, action) => {
+      const equipment = action.payload;
+      if (state.equipment.includes(equipment)) {
+        state.equipment = state.equipment.filter((item) => item !== equipment);
+      } else {
+        state.equipment.push(equipment);
+      }
+    },
+    clearFilters: (state) => {
+      state.location = "";
+      state.type = "";
+      state.equipment = [];
     },
   },
 });
 
-export const { setLocation, setType, toggleFeature } = filtersSlice.actions;
+export const { setLocation, setType, toggleEquipment, clearFilters } =
+  filtersSlice.actions;
 export default filtersSlice.reducer;

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Catalog from "./pages/Catalog";
-import CamperDetails from "./pages/CamperDetails";
+import Catalog from "./pages/Catalog/Catalog";
+import CamperDetails from "./pages/Details/CamperDetails";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
